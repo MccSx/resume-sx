@@ -15,6 +15,12 @@ hr {
   border: none;
   border-top: 1px solid #dedede;
 }
+ol,ul {
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
 .clearfix::after {
   content: '';
   display: block;
@@ -90,6 +96,7 @@ hr {
   max-width: 940px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .userCard .welcome {
   background-color: #e6686a;
@@ -123,6 +130,7 @@ hr {
 }
 .text h1 {
   margin-bottom: 6px;
+  font-weight: bold;
 }
 .text hr {
   margin: 20px 0;
@@ -160,4 +168,147 @@ hr {
   fill: white;
   /* margin: 0 16px; */
   vertical-align: top;
+}
+.information {
+  margin-top: -340px;
+}
+.downloadResume-wrapper {
+  text-align: center;
+}
+.downloadResume {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 21px 55px;
+  display: inline-block;
+  border: 1px solid #cdcfd1;
+  background: #efefef;
+  color: #3d4451;
+  border-radius: 2px;
+  font-weight: bold;
+  margin: 30px 0px 35px 0px;
+  transition: box-shadow 0.5s;
+}
+.downloadResume:hover {
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+.self {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  font-family: "方正舒体";
+}
+.skills,.portfolio {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.skills h2,.portfolio h2 {
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+}
+.skills ol {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  background: white;
+  padding: 42px 50px 8px;
+  margin-top: 30px;
+}
+.skills ol>li {
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+.skills ol>li:nth-child(even) {
+  float: right;
+}
+.skills ol>li>h3 {
+  line-height: 1.1;
+  font-size: 14px;
+  padding-right: 40px;
+}
+.progressBar {
+  background: #fae1e1;
+  height: 5px;
+  border-radius: 2px;
+  margin: 4px 0px 40px 0px;
+}
+.progress {
+  height: 100%;
+  background: #e6686a;
+  width: 50%;
+  border-radius: 2px;
+}
+
+.portfolio {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.portfolio ol {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 0 auto;
+}
+.portfolio ol>li {
+  float: left;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.portfolio nav {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 32px;
+}
+.portfolio ol>li:first-child {
+  margin-left: 0;
+}
+.bar {
+  height: 5px;
+  background: white;
+  margin-top: 5px;
+  margin-bottom: 28px;
+  border-radius: 2px;
+}
+.bar-inner {
+  height: 100%;
+  background: #e6686a;
+  width: 20%;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+.bar.state-1 .bar-inner {
+  margin-left: 0;
+  width: 40px;
+}
+.bar.state-2 .bar-inner {
+  margin-left: 70px;
+  width: 50px;
+}
+.bar.state-3 .bar-inner {
+  margin-left: 150px;
+  width: 96px;
+}
+.works {
+  position: relative;
+  height: 576px;
+}
+.works .big,.works .small {
+  position: absolute;
+}
+.works .big {
+  top: 0;
+  left: 0;
+}
+.works .small.portfolia2 {
+  top: 0;
+  left: 644px;
+}
+.works .small.portfolia3 {
+  top: 298px;
+  left: 644px;
 }
