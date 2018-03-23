@@ -1,314 +1,72 @@
 body {
-  background: #efefef;
-  margin: 0;
+  background: #efefef; margin: 0;
 }
-a {
-  color: inherit;
-  text-decoration: none;
+a {color: inherit; text-decoration: none;}
+* {margin: 0; padding: 0;}
+hr {height: 0; border: none; border-top: 1px solid #dedede;}
+ol,ul {list-style: none;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+.clearfix::after {content: ''; display: block; clear: both;}
+.logo {float: left;}
+.topNavBar {padding: 20px 0; position: fixed; top: 0; left: 0; width: 100%;}
+.topNavBar-inner {padding: 0 16px;}
+.topNavBar nav {float: right; padding-top: 7px;}
+.topNavBar nav ul {list-style: none; margin: 0; padding: 0;
 }
-* {
-  margin: 0;
-  padding: 0;
+.topNavBar nav ul>li {float: left; margin-left: 17px; margin-right: 17px;
 }
-hr {
-  height: 0;
-  border: none;
-  border-top: 1px solid #dedede;
-}
-ol,ul {
-  list-style: none;
-}
-h1,h2,h3,h4,h5,h6 {
-  font-weight: normal;
-}
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.logo {
-  float: left;
-}
-.topNavBar {
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.topNavBar-inner {
-  padding: 0 16px;
-}
-.topNavBar nav {
-  float: right;
-  padding-top: 7px;
-}
-.topNavBar nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.topNavBar nav ul>li {
-  float: left;
-  margin-left: 17px;
-  margin-right: 17px;
-}
-.topNavBar nav ul>li>a {
-  font-size: 12px;
-  line-height: 17px;
-  color: #b7b7b7;
-  font-weight: bold;
-  border-top: 3px solid transparent;
-  border-bottom: 3px solid transparent;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: block;
-}
-.topNavBar nav ul>li>a:hover {
-  border-bottom: 3px solid #e06567;
-}
-.topNavBar .logo {
-  font-size: 24px;
-  font-family: "Arial Black";
-  padding-top: 3px;
-  padding-bottom: 4px;
-}
-.topNavBar .logo .rs {
-  margin-right: 4px;
-  color: #e6686a;
-}
-.topNavBar .logo .card {
-  color: #9a9da2;
-}
+.topNavBar nav ul>li>a {font-size: 12px; line-height: 17px; color: #b7b7b7; font-weight: bold; border-top: 3px solid transparent; border-bottom: 3px solid transparent; padding-top: 5px; padding-bottom: 5px; display: block;}
+.topNavBar nav ul>li>a:hover {border-bottom: 3px solid #e06567;}
+.topNavBar .logo {font-size: 24px; font-family: "Arial Black"; padding-top: 3px; padding-bottom: 4px;}
+.topNavBar .logo .rs { margin-right: 4px; color: #e6686a;}
+.topNavBar .logo .card { color: #9a9da2;}
 
-.banner {
-  height: 515px;
-  background-image: url(./image/bg.jpg);
-  background-position: center center;
-  background-size: cover;
-}
-.banner .mask {
-  height: 515px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+.banner { height: 515px; background-image: url(./image/bg.jpg); background-position: center center; background-size: cover;}
+.banner .mask { height: 515px; background-color: rgba(0, 0, 0, 0.8);}
 
-.userCard {
-  max-width: 940px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+.userCard {max-width: 940px; margin: 0 auto; background-color: #ffffff; box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);}
+.userCard .welcome {background-color: #e6686a; color: white; padding: 4px 16px; display: inline-block; line-height: 22px; position: relative; margin-bottom: 28px;}
+.userCard .welcome .triangle {display: block; border: 10px solid transparent; width: 0px; border-left-color: #e6686a; border-top-width: 0px; position: absolute; left: 4px; top: 100%;}
+.userCard .picture {float: left;}
+.userCard .text {float: left; margin-left: 65px; width: 470px;
 }
-.userCard .welcome {
-  background-color: #e6686a;
-  color: white;
-  padding: 4px 16px;
-  display: inline-block;
-  line-height: 22px;
-  position: relative;
-  margin-bottom: 28px;
+.userCard .pictureAndText {padding: 50px;}
+.text h1 {margin-bottom: 6px; font-weight: bold;}
+.text hr {margin: 20px 0;}
+.userCard dl dt,.userCard dl dd {float: left; padding: 5px 0;
 }
-.userCard .welcome .triangle {
-  display: block;
-  border: 10px solid transparent;
-  width: 0px;
-  border-left-color: #e6686a;
-  border-top-width: 0px;
-  position: absolute;
-  left: 4px;
-  top: 100%;
-}
-.userCard .picture {
-  float: left;
-}
-.userCard .text {
-  float: left;
-  margin-left: 65px;
-  width: 470px;
-}
-.userCard .pictureAndText {
-  padding: 50px;
-}
-.text h1 {
-  margin-bottom: 6px;
-  font-weight: bold;
-}
-.text hr {
-  margin: 20px 0;
-}
-.userCard dl dt,.userCard dl dd {
-  float: left;
-  padding: 5px 0;
-}
-.userCard dl dt {
-  width: 30%;
-  font-weight: bold;
-}
-.userCard dl dd {
-  width: 70%;
-  color: #9da0a7;
-}
-.media {
-  background: #e6686a;
-  text-align: center;
-}
-.media a {
-  display: inline-block;
-  border-radius: 50%;
-  line-height: 30px;
-  width: 40px;
-  padding: 5px 0;
-  margin: 18px 20px;
-}
-.media a:hover {
-  background: #cf5d5f;
-}
-.userCard svg {
-  width: 30px;
-  height: 30px;
-  fill: white;
-  /* margin: 0 16px; */
-  vertical-align: top;
-}
-.information {
-  margin-top: -340px;
-}
-.downloadResume-wrapper {
-  text-align: center;
-}
-.downloadResume {
-  font-size: 14px;
-  line-height: 16px;
-  padding: 21px 55px;
-  display: inline-block;
-  border: 1px solid #cdcfd1;
-  background: #efefef;
-  color: #3d4451;
-  border-radius: 2px;
-  font-weight: bold;
-  margin: 30px 0px 35px 0px;
-  transition: box-shadow 0.5s;
-}
-.downloadResume:hover {
-  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
-}
-.self {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.8;
-  font-family: "方正舒体";
-}
-.skills,.portfolio {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
-}
-.skills h2,.portfolio h2 {
-  color: #3d4451;
-  font-size: 34px;
-  line-height: 1.2;
-  font-weight: 600;
-  text-align: center;
-}
-.skills ol {
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
-  background: white;
-  padding: 42px 50px 8px;
-  margin-top: 30px;
-}
-.skills ol>li {
-  float: left;
-  width: 48%;
-  box-sizing: border-box;
-}
-.skills ol>li:nth-child(even) {
-  float: right;
-}
-.skills ol>li>h3 {
-  line-height: 1.1;
-  font-size: 14px;
-  padding-right: 40px;
-}
-.progressBar {
-  background: #fae1e1;
-  height: 5px;
-  border-radius: 2px;
-  margin: 4px 0px 40px 0px;
-}
-.progress {
-  height: 100%;
-  background: #e6686a;
-  width: 50%;
-  border-radius: 2px;
-}
+.userCard dl dt {width: 30%; font-weight: bold;}
+.userCard dl dd {width: 70%; color: #9da0a7;}
+.media {background: #e6686a; text-align: center;}
+.media a {display: inline-block; border-radius: 50%; line-height: 30px; width: 40px; padding: 5px 0; margin: 18px 20px;}
+.media a:hover {background: #cf5d5f;}
+.userCard svg {width: 30px; height: 30px; fill: white; vertical-align: top;}
+.information {margin-top: -340px;}
+.downloadResume-wrapper {text-align: center;}
+.downloadResume {font-size: 14px; line-height: 16px; padding: 21px 55px; display: inline-block; border: 1px solid #cdcfd1; background: #efefef; color: #3d4451; border-radius: 2px; font-weight: bold; margin: 30px 0px 35px 0px; transition: box-shadow 0.5s;}
+.downloadResume:hover {box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);}
+.self {max-width: 940px; margin-left: auto; margin-right: auto; line-height: 1.8; font-family: "方正舒体";}
+.skills,.portfolio {max-width: 940px; margin-left: auto; margin-right: auto; margin-top: 60px;}
+.skills h2,.portfolio h2 {color: #3d4451; font-size: 34px; line-height: 1.2; font-weight: 600; text-align: center;}
+.skills ol {box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2); background: white; padding: 42px 50px 8px; margin-top: 30px;}
+.skills ol>li {float: left; width: 48%; box-sizing: border-box;}
+.skills ol>li:nth-child(even) {float: right;}
+.skills ol>li>h3 {line-height: 1.1; font-size: 14px; padding-right: 40px;}
+.progressBar {background: #fae1e1; height: 5px; border-radius: 2px; margin: 4px 0px 40px 0px;}
+.progress {height: 100%; background: #e6686a; width: 50%; border-radius: 2px;}
 
-.portfolio {
-  text-align: center;
-  margin-bottom: 100px;
-}
-.portfolio ol {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  margin: 0 auto;
-}
-.portfolio ol>li {
-  float: left;
-  margin-left: 40px;
-  cursor: pointer;
-}
-.portfolio nav {
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 32px;
-}
-.portfolio ol>li:first-child {
-  margin-left: 0;
-}
-.bar {
-  height: 5px;
-  background: white;
-  margin-top: 5px;
-  margin-bottom: 28px;
-  border-radius: 2px;
-}
-.bar-inner {
-  height: 100%;
-  background: #e6686a;
-  width: 20%;
-  border-radius: 2px;
-  transition: all 0.5s;
-}
-.bar.state-1 .bar-inner {
-  margin-left: 0;
-  width: 40px;
-}
-.bar.state-2 .bar-inner {
-  margin-left: 70px;
-  width: 50px;
-}
-.bar.state-3 .bar-inner {
-  margin-left: 150px;
-  width: 96px;
-}
-.works {
-  position: relative;
-  height: 576px;
-}
-.works .big,.works .small {
-  position: absolute;
-}
-.works .big {
-  top: 0;
-  left: 0;
-}
-.works .small.portfolia2 {
-  top: 0;
-  left: 644px;
-}
-.works .small.portfolia3 {
-  top: 298px;
-  left: 644px;
-}
+.portfolio {text-align: center; margin-bottom: 100px;}
+.portfolio ol {display: inline-block; vertical-align: top; text-align: center; margin: 0 auto;}
+.portfolio ol>li { float: left; margin-left: 40px; cursor: pointer;}
+.portfolio nav {text-align: center; display: inline-block; vertical-align: top; margin-top: 32px;}
+.portfolio ol>li:first-child {margin-left: 0;}
+.bar {height: 5px; background: white; margin-top: 5px; margin-bottom: 28px; border-radius: 2px;}
+.bar-inner {height: 100%; background: #e6686a; width: 20%; border-radius: 2px; transition: all 0.5s;}
+.bar.state-1 .bar-inner {margin-left: 0; width: 40px;}
+.bar.state-2 .bar-inner {margin-left: 70px; width: 50px;}
+.bar.state-3 .bar-inner {margin-left: 150px; width: 96px;}
+.works {position: relative; height: 576px;}
+.works .big,.works .small {position: absolute;}
+.works .big {top: 0; left: 0;}
+.works .small.portfolia2 {top: 0; left: 644px;}
+.works .small.portfolia3 {top: 298px; left: 644px;}
